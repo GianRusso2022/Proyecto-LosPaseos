@@ -583,3 +583,28 @@ body {
         width: 40%;
     }
 }
+
+/* ANIMACIONES PAGINA PERROS */
+
+.perro:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMACIONES PAGINA SOBRE NOSOTROS */
+
+.img-logo {
+    animation-name: pulso;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+}
+
+@keyframes pulso {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
