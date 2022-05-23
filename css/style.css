@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-image: url(../img/cool-background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 header {
     width: 100%;
     background-color: deepskyblue;
@@ -159,71 +165,6 @@ span {
     display: flex;
 }
 
-.seccion3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    align-items: center;
-    background-color: rgb(93, 177, 236);
-}
-
-.catsDesc:first-child {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../img/Ejercicio.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 10px;
-    margin: 10px 10px;
-
-}
-
-.catsDesc:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../img/Socializacion.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 10px;
-    margin: 10px 10px;
-}
-
-.catsDesc:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../img/Rutina.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 10px;
-    margin: 10px 10px;
-}
-
-.catsDesc {
-    height: 400px;
-}
-
-.catsDesc h3 {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 3px 5px 2px #474747;
-}
-
-.catsDesc p {
-    text-align: center;
-    margin-top: 85px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 1.5rem;
-    text-shadow: 3px 5px 2px #474747;
-}
-
 footer {
     background-color: rgb(80, 137, 252);
     width: 100%;
@@ -316,7 +257,7 @@ footer .copy {
     width: 100%;
     align-items: center;
     background-color: rgb(55, 104, 197);
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tituloytexto {
@@ -350,11 +291,6 @@ footer .copy {
 
 }
 
-.gianluca img {
-    margin-bottom: 10rem;
-    width: 400px;
-}
-
 .mateo {
     display: flex;
     flex-direction: column;
@@ -366,15 +302,9 @@ footer .copy {
     justify-content: space-between;
 }
 
-.mateo img {
+.imgMateo img{
     width: 400px;
     margin-bottom: 10rem;
-}
-
-body {
-    background-image: url(../img/cool-background.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 /* CSS PAGINA RECORRIDO */
@@ -389,10 +319,6 @@ body {
     background-color: rgb(70, 127, 192);
 }
 
-.zonaSur a {
-    display: none;
-}
-
 .iframe {
     width: 70%;
     height: 70%;
@@ -403,13 +329,6 @@ body {
     width: 100%;
 }
 
-.zonaSur h2 {
-    margin-top: 35px;
-    font-size: 30px;
-    text-align: center;
-}
-
-
 .radaTilly {
     display: flex;
     flex-direction: column;
@@ -418,15 +337,6 @@ body {
     align-items: center;
     height: 100vh;
     background-color: rgb(46, 97, 155);
-}
-
-.radaTilly a {
-    display: none;
-}
-
-.radaTilly h3 {
-    font-size: 30px;
-    text-align: center;
 }
 
 /* CSS PAGINA PERROS */
@@ -455,36 +365,27 @@ body {
     height: 100%;
 }
 
-/* CSS PAGINA CONSULTAR */
 
-.principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    justify-content: space-around;
-    height: 100vh;
-    background-color: rgb(58, 148, 221);
-}
-
-.principal img {
-    width: 300px;
-    border-radius: 50%;
-}
-
-.principal h1 {
-    text-align: center;
-}
 
 @media (min-width:900px) {
     footer img {
         width: 30%;
     }
 
+    .gianluca img {
+        margin-bottom: 10rem;
+        width: 350px;
+    }
+
+    .mateo img {
+        width: 350px;
+        margin-bottom: 10rem;
+    }
+
     .tituloytexto h2 {
         color: #fff;
         margin-top: 20px;
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 30px;
         text-shadow: 3px 5px 2px #474747;
     }
@@ -496,8 +397,8 @@ body {
     }
 
     .tituloytexto p {
-        font-size: 2.2rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-align: left;
         margin: 25px;
         line-height: 50px;
     }
@@ -535,8 +436,7 @@ body {
     }
 
     .seccion3 {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .contenedor-general .subtitulo {
@@ -555,13 +455,6 @@ body {
         font-size: 2.5rem;
     }
 
-    .catsDesc h3 {
-        font-size: 1.8rem;
-    }
-
-    .catsDesc p {
-        font-size: 1.2rem;
-    }
 
     /* MQ NOSOTROS */
     .gianluca img {
@@ -576,11 +469,6 @@ body {
 
     .imagenes {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* MQ CONSULTAR */
-    .principal img {
-        width: 40%;
     }
 }
 
